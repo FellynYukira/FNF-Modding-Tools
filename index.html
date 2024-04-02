@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="" href="styles/menu.css">
-        <link rel="icon" type="image/x-icon" href="src/img/icon.ico">
-        <title>FNF' Moddin' Tools</title>
-    </head>
-    <body>
+<head>
+    <link rel="stylesheet" type="" href="styles/menu.css">
+    <link rel="icon" type="image/x-icon" href="src/img/icon.ico">
+    <title>FNF' Moddin' Tools</title>
+</head>
+<body>
+    <div class="header-menu">
+        <h1>FNF' Moddin' Tools</h1>
+        <h4>(another things soon...)</h4>
+    </div>
+    <div class="main-menu">
+        <img src="src/img/psych-to-codename.png">
+        <h1>Psych to Codename character converter</h1>
         <div>
-            <h1>FNF' Moddin' Tools</h1>
+            <input style="display:none" type="file" id="char-file" accept=".json">
+            <button type="button" id="choose-file">Choose file</button>
+            <label id="selected-file-txt">No file selected</label><br><br>
+            <input type="checkbox" id="is-player-checkbox">
+            <label id="selected-file-txt">isPlayer</label><br>
+            <input type="checkbox" id="is-gf-checkbox">
+            <label id="selected-file-txt">isGF</label><br><br>
+            <button type="button" id="convert-button">Convert & Download</button>
         </div>
-    </body>
+    </div>
+    <div class="footer-menu">
+        <h1>Website by FellynYukira</h1>
+        <img src="src/img/fellyn.png" width="40px" height="40px">
+    </div>
+</body>
+<script src="scripts/menu.js"></script>
 </html>

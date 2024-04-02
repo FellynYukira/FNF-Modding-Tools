@@ -3,16 +3,126 @@
     src: url("../src/fonts/phantommuff-diff.ttf");
 }
 
-body {
-    background-color: #0a0a0a;
-    margin: 0;
+@font-face {
+    font-family: PhantomMuff;
+    src: url("../src/fonts/phantommuff.ttf");
 }
 
-div {
-    background-image: linear-gradient(to right, rgba(251, 0, 255, 0.5), rgba(0, 51, 255, 0.5));
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #0a0a0a url("../src/img/bgDark.png") center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-menu {
+    background-image: linear-gradient(to left, rgba(251, 0, 255, 0.5), rgba(58, 18, 255, 0.5));
     display: flex;
     justify-content: center;
+    border: solid white;
+}
+
+.header-menu h1 {
+    margin: 10px;
     font-family: PhantomMuff-Diff;
     color: white;
-    font-size: 30px;
+    font-size: 60px;
+    font-synthesis-weight: none;
+    font-variant-caps: small-caps;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.header-menu h4 {
+    margin: 10px;
+    font-family: PhantomMuff;
+    color: white;
+    font-synthesis-weight: none;
+    font-variant-caps: small-caps;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.main-menu {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-menu img {
+    filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.5));
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.main-menu h1 {
+    font-family: PhantomMuff;
+    font-synthesis-weight: none;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.main-menu button {
+    font-family: PhantomMuff;
+    color: white;
+    background-color: rgb(84, 0, 174);
+    border: none;
+    padding: 10px;
+    transition: 0.2s;
+    filter: drop-shadow(0 2px 0 white);
+}
+
+.main-menu button:hover {
+    background-color: rgb(111, 30, 198);
+}
+
+.main-menu div {
+    width: -webkit-fill-available;
+}
+
+.main-menu div label {
+    font-family: PhantomMuff;
+    font-synthesis-weight: none;
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.footer-menu {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.footer-menu h1 {
+    font-family: PhantomMuff;
+    font-synthesis-weight: none;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.not-active {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
 }
